@@ -38,7 +38,7 @@ add_action('wp_footer', function() {
 	        prefixUrl:          "<?php echo get_stylesheet_directory_uri(); ?>/openseadragon/images/",
 	        preserveViewport:   true,
 	        visibilityRatio:    1,
-	        minZoomLevel:       1,
+	        minZoomLevel:       -1,
 	        defaultZoomLevel:   1,
 	        sequenceMode:       true,
 			showNavigator:		true,
