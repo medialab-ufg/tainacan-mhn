@@ -39,6 +39,7 @@
 	bottom: 15px;
 	border-radius: 50%;
 	background-color: rgba(255,255,255,.9);
+	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 #close-image-modal {
 	width: 48px;
@@ -49,12 +50,13 @@
 	line-height: 48px;
 	display: inline-block;
 	position: absolute;
-	top: 15px;
+	top: 40px;
 	left: 15px;
 	border-radius: 50%;
 	border: none;
 	background-color: rgba(255,255,255,.9);
 	z-index: 9;
+	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
 .modal-content { height: 100%; }
 #map {
