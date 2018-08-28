@@ -39,7 +39,7 @@ add_action('wp_footer', function() {
 	        preserveViewport:   true,
 	        visibilityRatio:    1,
 	        minZoomLevel:       -1,
-	        defaultZoomLevel:   1,
+	        defaultZoomLevel:   0,
 	        sequenceMode:       true,
 			showNavigator:		true,
 	        tileSources:   ['http://cantaloupe.medialab.ufg.br/iiif/2/003671.jpg/info.json']
