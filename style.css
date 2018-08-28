@@ -40,6 +40,22 @@
 	border-radius: 50%;
 	background-color: rgba(255,255,255,.9);
 }
+#close-image-modal {
+	width: 48px;
+	height: 48px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 48px;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(255,255,255,.9);
+	z-index: 9;
+}
 .modal-content { height: 100%; }
 #map {
 	width: 100%;

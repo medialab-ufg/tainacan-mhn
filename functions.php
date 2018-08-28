@@ -25,6 +25,7 @@ add_action('wp_footer', function() {
 	
 	<div class="modal" id="image-modal">
 			<div class="modal-content">
+				<a href="#" id="close-image-modal" class="mdi mdi-window-close"></a>
 				<div id="map">
 					
 				</div>

@@ -9,9 +9,13 @@ jQuery( document ).ready(function() {
 	
 	jQuery('#open-image-modal').click(function() {
 		jQuery('#image-modal').modal('show');
-		
-	});
-	
-	
 
+		return false;
+	});
+
+	jQuery('#close-image-modal').click(function() {
+		jQuery('#image-modal').modal('hide');
+
+		return false;
+	});
 });
