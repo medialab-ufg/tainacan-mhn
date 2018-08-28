@@ -17,15 +17,15 @@ function mhn_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'mhn_enqueue_styles' );
 
 add_filter('tainacan-get-the-document', function($html, $item) {
-	return '<img src="http://cantaloupe.medialab.ufg.br/iiif/2/003671.jpg/full/!500,500/0/default.jpg" /><a id="open-image-modal">OPEN</a>';
+	return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/003671.jpg/full/!500,500/0/default.jpg" /><a href="javascript:return false;" id="open-image-modal" class="mdi mdi-magnify-plus"></a></div>';
 }, 10, 2);
 
 add_action('wp_footer', function() {
 	?>
 	
-	<div class="modal" id="image-modal" style="width: 100$; heigth: 100%;">
+	<div class="modal" id="image-modal">
 			<div class="modal-content">
-				<div id="map" style="width: 1000px; height: 700px;">
+				<div id="map">
 					
 				</div>
 			</div>
