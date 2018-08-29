@@ -23,13 +23,15 @@ add_filter('tainacan-get-the-document', function($html, $item) {
 add_action('wp_footer', function() {
 	?>
 	
-	<div class="modal" id="image-modal">
+	<div class="modal fade" id="image-modal" role="dialog">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<a href="#" id="close-image-modal" class="mdi mdi-window-close"></a>
 				<div id="map">
 					
 				</div>
 			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript">

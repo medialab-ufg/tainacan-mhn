@@ -58,6 +58,10 @@
 	z-index: 9;
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 }
+.modal-dialog {
+	max-width: none;
+	height: 100%;
+}
 .modal-content { height: 100%; }
 #map {
 	width: 100%;
