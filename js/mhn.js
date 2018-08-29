@@ -7,15 +7,14 @@ jQuery( document ).ready(function() {
 	//  show: false
 	//});
 	
-	jQuery('#open-image-modal').click(function() {
-		jQuery('#image-modal').modal('show');
-
-		return false;
-	});
-
-	jQuery('#close-image-modal').click(function() {
-		jQuery('#image-modal').modal('hide');
-
-		return false;
-	});
+	executarModal('#open-image-modal','#image-modal','show');
+	executarModal('#close-image-modal','#image-modal','hide');
 });
+
+function executarModal(botao,modal,acao) {
+	jQuery(botao).on('click',function() {
+		jQuery(modal).modal(acao);
+
+		return false;
+	});
+}
