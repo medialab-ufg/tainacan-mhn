@@ -49,3 +49,10 @@ add_action('wp_footer', function() {
 	</script>
 	<?php
 });
+
+/**
+ * Register the menu for use after the banner
+ */
+register_nav_menus( array(
+	'navMenuaboveHeader' => __( 'Nav Menu Above Header', 'tainacan-theme' ),
+) );
