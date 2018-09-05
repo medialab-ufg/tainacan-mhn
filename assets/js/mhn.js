@@ -1,12 +1,5 @@
 //jQuery( function( $ ) {
 jQuery( document ).ready(function() {
-
-
-	//jQuery('#image-modal').modal({
-	//  keyboard: true,
-	//  show: false
-	//});
-	
 	executarModal('#open-image-modal','#image-modal','show');
 	executarModal('#close-image-modal','#image-modal','hide');
 });

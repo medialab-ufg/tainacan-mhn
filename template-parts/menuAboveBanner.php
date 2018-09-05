@@ -6,13 +6,14 @@
     $bread .= "</ol>"; */
 ?>
 <?php if(has_nav_menu('navMenuaboveHeader')) : ?>
-    <nav class="navbar navbar-expand-md navbar-light bg-white px-0 border-bottom menu-aboveheader" role="navigation">
-        <div class="container-fluid max-large px-0 margin-one-column">
-            <!-- Brand and toggle get grouped for better mobile display -->	
-            <a class="navbar-brand d-md-none" href="#"></a>
-            <button class="navbar-toggler text-heavy-metal border-0 px-2 pt-2" type="button" data-toggle="collapse" data-target="#menuaboveHeader" aria-controls="menuaboveHeader" aria-expanded="false" aria-label="Toggle navigation">	
-                <span class="navbar-toggler-icon"></span>	
-            </button>
+    <nav class="navbar navbar-expand-lg menu-aboveheader" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display --> 
+        <a class="navbar-brand d-md-none" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuaboveHeader" aria-controls="menuaboveHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <div class="navigation-menu-wrapper">
+            <a href="<?php echo get_home_url(); ?>" class="navbar-brand tainacan-logo" rel="home" itemprop="url"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/lgo/mhn.png'; ?>" class="logo" alt="Tainacan MHN" itemprop="logo"></a>
             <?php /* if(wp_is_mobile()) echo $bread; */ ?>
                 <?php
                     wp_nav_menu( array(
@@ -21,7 +22,7 @@
                         'container'			=> 'div',
                         'container_class'	=> 'collapse navbar-collapse',
                         'container_id'		=> 'menuaboveHeader',
-                        'menu_class'		=> 'navbar-nav mr-auto',
+                        'menu_class'		=> 'navbar-nav',
                         'fallback_cb'		=> 'WP_Bootstrap_Navwalker::fallback',
                         'walker'			=> new WP_Bootstrap_Navwalker()
                     ) );
