@@ -13,6 +13,7 @@
             <i class="mdi mdi-menu"></i>
         </button>
         <div class="navigation-menu-wrapper">
+            <h1 class="main-title"><a href="<?php echo get_home_url(); ?>" class="navbar-brand tainacan-logo" rel="home" itemprop="url"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/lgo/mhn.png'; ?>" class="logo" alt="Museu Histórico Nacional" title="Museu Histórico Nacional" itemprop="logo"></a></h1>
             <?php /* if(wp_is_mobile()) echo $bread; */ ?>
             <?php
                 wp_nav_menu( array(

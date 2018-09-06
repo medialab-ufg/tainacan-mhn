@@ -12,13 +12,13 @@
 
 		<div class="col-sm margin-one-column">
 			<div id="content" role="main">
-				<div class="destaques-list">
+				<!-- <div class="destaques-list">
 					<ul>
 						<li>
 							
 						</li>
 					</ul>
-				</div>
+				</div> -->
 				<?php get_template_part('template-parts/loop', 'singular'); ?>
 			</div><!-- /#content -->
 		</div>

@@ -21,8 +21,11 @@ add_action( 'wp_enqueue_scripts', 'mhn_enqueue_styles' );
 require_once('iiif-integration.php');
 
 /**
- * Register the menu for use after the banner
+ * Register the menu for use before the banner
  */
-register_nav_menus( array(
-	'navMenuaboveHeader' => __( 'Nav Menu Above Header', 'tainacan-theme' ),
-) );
+function mhn_top_menu() {
+	register_nav_menus( array(
+		'navMenuaboveHeader' => __( 'Nav Menu Above Header', 'tainacan-theme' ),
+	) );
+}
+add_action( 'init', 'mhn_top_menu' );

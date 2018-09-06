@@ -131,16 +131,20 @@ body[data-theme="mhn-theme-page"] .navbar {
 	justify-content: center;
 	background-color: #9c333f;
 }
-body[data-theme="mhn-theme-page"] .navbar-nav li {
+body[data-theme="mhn-theme-page"] .navbar-nav li,
+body[data-theme="mhn-theme-page"] nav.menu-belowheader #menubelowHeader>ul>li.menu-item {
 	height: 70px;
+	padding: 0;
 	border-left: 1px solid #DCDCDC;
 }
 body[data-theme="mhn-theme-page"] .navbar-nav .nav-link,
-body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link {
+body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link,
+body[data-theme="mhn-theme-page"] nav.menu-belowheader #menubelowHeader>ul>li.menu-item a {
 	height: 100%;
 	padding: 0 20px;
 	font-weight: 400;
 	font-family: 'EB Garamond', serif;
+	font-size: 1rem;
 	color: #fff;
 	text-transform: uppercase;
 	display: flex;
