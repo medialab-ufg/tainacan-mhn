@@ -11,7 +11,7 @@ function mhn_enqueue_styles() {
 	// 	array( $parent_style )
 	// );
 
-	wp_enqueue_style('google-custom-fonts', '<//fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Roboto:400,400i,700,700i');
+	wp_enqueue_style('google-custom-fonts', '//fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i');
 
 	wp_enqueue_script( 'mhn', get_stylesheet_directory_uri() . '/assets/js/mhn.js', array('jquery') );
 	wp_enqueue_script( 'openseadragon', get_stylesheet_directory_uri() . '/openseadragon/openseadragon.js' );

@@ -15,6 +15,10 @@
 */
 
 
+.tainacan-single-post article .tainacan-content.single-item-collection .single-item-collection--document {
+	display: flex;
+	justify-content: center;
+}
 .openseadragon-wrapper-image {
 	display: inline-block;
 	position: relative;
@@ -120,6 +124,7 @@ body[data-theme="mhn-theme-page"] .navigation-menu-wrapper {
 	flex-flow: row nowrap;
 }
 body[data-theme="mhn-theme-page"] .navbar {
+	width: 100%;
 	min-height: 160px;
 	padding: 0;
 	display: flex;
