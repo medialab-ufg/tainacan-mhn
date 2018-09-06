@@ -23,9 +23,7 @@ require_once('iiif-integration.php');
 /**
  * Register the menu for use before the banner
  */
+add_action( 'after_setup_theme', 'mhn_top_menu' );
 function mhn_top_menu() {
-	register_nav_menus( array(
-		'navMenuaboveHeader' => __( 'Nav Menu Above Header', 'tainacan-theme' ),
-	) );
+	register_nav_menu( 'navMenuaboveHeader', __( 'Nav Menu Above Header', 'tainacan-theme' ) );
 }
-add_action( 'init', 'mhn_top_menu' );
