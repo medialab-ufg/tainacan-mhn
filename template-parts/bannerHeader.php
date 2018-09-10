@@ -39,4 +39,56 @@
             <p><?php bloginfo('description'); ?></p>
         </div>
     </div>
+
+    <div class="accessibility-options">
+        <button type="button" class="button-text-minus">A-</button>
+        <button type="button" class="button-text-default">A</button>
+        <button type="button" class="button-text-plus">A+</button>
+        <button type="button" class="button-high-contrast">Alto Contraste</button>
+    </div>
+
+    <form action="#" method="post" class="search-box">
+        <fieldset>
+            <legend>Formulário de busca</legend>
+
+            <input type="text">
+            <button type="submit"><i class="mdi mdi-magnify"></i></button>
+        </fieldset>
+    </form>
+
+    <?php global $wp; ?>
+    <div class="collection-header--share">
+        <div class="btn trigger">
+            <span class="mdi mdi-share-variant"></span>
+        </div>
+        <div class="icons">
+            <?php if ( true == get_theme_mod( 'facebook_share', true ) ) : ?> 
+                <div class="rotater">
+                    <a href="http://www.facebook.com/sharer.php?u=<?php echo home_url( $wp->request ); ?>" target="_blank">
+                        <div class="btn btn-icon">
+                            <i class="mdi mdi-facebook"></i>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if ( true == get_theme_mod( 'google_share', true ) ) : ?> 
+                <div class="rotater">
+                    <a href="https://plus.google.com/share?url=<?php echo home_url( $wp->request ); ?>" target="_blank">
+                        <div class="btn btn-icon">
+                            <i class="mdi mdi-google-plus"></i>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+            <?php if ( true == get_theme_mod( 'twitter_share', true ) && get_option( 'twitter_user') ) : ?> 
+                <div class="rotater">
+                    <a href="http://twitter.com/share?url=<?php echo home_url( $wp->request ); ?>&amp;text=<?php the_title_attribute(); ?>&amp;via=<?php echo get_option( 'twitter_user', '' ) ?>" target="_blank">
+                        <div class="btn btn-icon">
+                            <i class="mdi mdi-twitter"></i>
+                        </div>
+                    </a>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
 </div>
