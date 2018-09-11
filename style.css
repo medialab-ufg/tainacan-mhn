@@ -390,52 +390,120 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 - BARRA DE ACESSIBILIDADE
 */
 
+.accessibility-bar {
+	width: 100%;
+	background-color: #fff;
+}
+.accessibility-bar__container {
+	width: 100%;
+	max-width: 960px;
+	min-height: 40px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
 .accessibility-shortcuts {
-	margin: 0;
+	margin: 0 -10px;
 	padding: 0;
 	list-style: none;
 	display: flex;
-	position: fixed;
-	top: 50px;
-	left: 50%;
-	transform: translate(-50%,0);
-	z-index: 99999;
 }
-.accessibility-shortcuts a {
-	padding: 10px;
-	color: #fff;
-	display: inline-block;
+.accessibility-shortcuts--hidden {
+	position: fixed;
+	top: -50px;
+	left: -50px;
 	opacity: 0;
-	border-left: 1px solid #fff;
-	background-color: rgba(156, 51, 63,.9);
 	z-index: -2;
 }
-.accessibility-shortcuts a:focus {
-	opacity: 1;
-	z-index: 2;
+.accessibility-shortcuts li { margin: 0 10px; }
+.accessibility-shortcuts a {
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: normal;
+	display: inline-block;
 }
 .accessibility-shortcuts a span {
-	padding: 0 5px;
-	color: #9c333f;
-	background: #fff;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #fff;
+	line-height: 18px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	background: #9c333f;
 }
 
 .accessibility-options {
-	margin: 0;
-	padding: 10px;
+	margin: 0 -10px;
+	padding: 0;
 	display: flex;
 	list-style: none;
-	position: fixed;
-	top: 32px;
-	left: 20px;
-	z-index: 99999;
 	background-color: rgba(255,255,255,.7);
 }
-.accessibility-options button {
-	font-size: 16px;
-	cursor: pointer;
+.accessibility-options li { margin: 0 10px; }
+.accessibility-options span {
+	margin-right: 2px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: normal;
 }
-.accessibility-options li + li { margin-left: 5px; }
+.accessibility-options button {
+	width: 22px;
+	height: 22px;
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	color: #fff;
+	line-height: 22px;
+	text-align: center;
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 50%;
+	border: none;
+	background: #9c333f;
+}
+.accessibility-options button + button { margin-left: 2px; }
+.accessibility-options .button-high-contrast {
+	text-indent: -99999px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #000;
+	background-color: #fff;
+}
+.accessibility-options .button-high-contrast:after {
+	content: "";
+	width: 11px;
+	height: 22px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #000;
+}
+
+@media screen and (max-width: 800px) {
+	.accessibility-bar__container {
+		padding: 20px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.accessibility-shortcuts {
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	.accessibility-options { margin-top: 20px; }
+}
 
 /*
 - ALTO CONTRASTE
@@ -456,7 +524,8 @@ body.contraste .page-header .title-header h2:after,
 body.contraste .highlights-list__title-box:after { display: none !important; }
 
 body.contraste .navbar,
-body.contraste .page-header.page-height { border-bottom: 1px solid #fff !important; }
+body.contraste .page-header.page-height,
+body.contraste .accessibility-bar { border-bottom: 1px solid #fff !important; }
 
 body.contraste footer.tainacan-footer { border-top: 1px solid #fff !important; }
 
@@ -475,8 +544,8 @@ body.contraste .table-container .table-wrapper table.tainacan-table .column-main
 
 body.contraste .page-header .title-header.singular-title,
 body.contraste img,
-body.contraste .accessibility-options,
-body.contraste .tainacan-form .control.has-icons-right .icon { border: 1px solid #fff !important; }
+body.contraste .tainacan-form .control.has-icons-right .icon,
+body.contraste .accessibility-options button { border: 1px solid #fff !important; }
 
 body.contraste footer .tainacan-footer-info .tainacan-footer-info--logo,
 body.contraste .collection-header--type-b .btn.trigger { border: none !important; }
@@ -498,3 +567,4 @@ body.contraste .tooltip .tooltip-inner {
 	color: #000 !important;
 	background-color: #fff !important;
 }
+body.contraste .accessibility-options .button-high-contrast { background-color: #fff !important; }
