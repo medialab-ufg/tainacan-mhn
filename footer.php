@@ -57,17 +57,6 @@
             </div>
         </div>
 
-        <?php if ( is_single() && tainacan_get_item() ) { ?>
-            <script>
-                var url = '<?php echo admin_url( 'admin-ajax.php' ); ?>';
-                var data = {
-                    'action': 'count_visit', 
-                    'object_id': <?php echo get_the_ID(); ?> 
-                };
-                jQuery.get(url, data);
-            </script>
-        <?php } ?>
-
     </footer>
 <?php endif; ?>
 <?php wp_footer(); ?>
