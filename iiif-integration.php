@@ -12,6 +12,11 @@ class MHNIIIF {
 		add_action('admin_init', [$this, 'theme_options_init']);
 		add_action('admin_menu', [$this, 'theme_options_menu']);
 		
+		add_action('init', [$this, 'rewrite_rules']);
+		add_filter('query_vars', [$this, 'query_vars']);
+		
+		add_filter('template_include', [$this, 'manifest_template_include']);
+		
 		
 	}
 	
@@ -142,6 +147,9 @@ class MHNIIIF {
 		        defaultZoomLevel:   0,
 		        sequenceMode:       true,
 				showNavigator:		true,
+				navigatorAutoFade: 	true,
+				navigatorBorderColor: '#9c333f',
+				showSequenceControl: false,
 		        tileSources:   ['<?php echo $url; ?>']
 		    });
 		</script>
@@ -154,6 +162,37 @@ class MHNIIIF {
 			return $options[$option];
 		}
 		return false;
+	}
+	
+	function rewrite_rules() {
+		add_rewrite_rule('iiif-resource/([0-9]+)/manifest.json', 'index.php?iiif_manifest=$matches[1]', 'top');
+	}
+	
+	function query_vars($vars) {
+		$vars[] = 'iiif_manifest';
+		return $vars;
+	}
+	
+	function manifest_template_include($template) {
+		if ( !empty(get_query_var('iiif_manifest')) ) {
+			global $item, $iiif_id, $iiif_url;
+			if ( $item = tainacan_get_item( get_query_var('iiif_manifest') ) ) {
+				
+				$flag_id = $this->get_option('iiif_flag_meta_id');
+				if (get_post_meta($item->get_id(), $flag_id, true) != 'Sim') {
+					
+					return get_404_template();
+				}
+				
+				$meta_id = $this->get_option('iiif_num_registro_meta_id');
+				$iiif_id = get_post_meta($item->get_id(), $meta_id, true);
+				$iiif_url = $this->get_option('iiif_base_url') . $iiif_id . '.jpg/info.json';
+				
+				return STYLESHEETPATH . '/iiif-manifest.json.php';
+				
+			}
+		} 
+		return $template;	
 	}
 	
 	
