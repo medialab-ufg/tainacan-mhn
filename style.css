@@ -14,7 +14,10 @@ html {
 	font-size: 1rem;
 	transition: font-size 200ms ease-in-out;
 }
-body { font-size: inherit; }
+body {
+	font-size: inherit;
+	position: relative;
+}
 
 /*
 - MODAL DE AMPLIAÇÃO DAS IMAGENS - SESSÃO DOCUMENTOS
@@ -171,25 +174,6 @@ body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link:hover 
 }
 
 /*
-- BARRA DE ACESSIBILIDADE
-*/
-
-.accessibility-options {
-	padding: 10px;
-	display: flex;
-	position: absolute;
-	top: 0;
-	left: 20px;
-	z-index: 2;
-	background-color: rgba(255,255,255,.7);
-}
-.accessibility-options button {
-	font-size: 16px;
-	cursor: pointer;
-}
-.accessibility-options button + button { margin-left: 5px; }
-
-/*
 - DESTAQUE
 */
 
@@ -260,7 +244,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 .search-box input[type=text] {
 	width: 300px;
 	height: 53px;
-	padding: 0 10px;
+	padding: 0 20px;
 	line-height: 53px;
 	position: absolute;
 	top: 0;
@@ -286,10 +270,11 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	border: none;
 	background: none;
 }
+.search-box button[type=submit] i.mdi{ border-radius: 50%; }
 
 /* BOX DE COMPARTILHAMENTO */
 
-.collection-header--share {
+.collection-header--type-b {
 	width: 53px;
 	height: 53px;
 	line-height: 53px;
@@ -300,10 +285,15 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 	transform: translateX(0) translateY(0);
 }
-.collection-header--share .btn { background-color: rgba(255,255,255,.8); }
-.collection-header--share .btn .mdi { font-size: 34px; }
-.collection-header--share.active .rotater:nth-child(1) .btn-icon { transform: translateX(-5em) rotate(22.5deg); }
-.collection-header--share.active .rotater:nth-child(2) .btn-icon { transform: translateX(-5em) rotate(-22.5deg); }
+.collection-header--type-b .btn { background-color: rgba(255,255,255,.8); }
+.collection-header--type-b .btn .mdi {
+	height: 41px;
+	font-size: 34px;
+	line-height: 41px;
+	border-radius: 50%;
+}
+.collection-header--type-b.active .rotater:nth-child(1) .btn-icon { transform: translateX(-5em) rotate(22.5deg); }
+.collection-header--type-b.active .rotater:nth-child(2) .btn-icon { transform: translateX(-5em) rotate(-22.5deg); }
 
 /*
 - LISTA DE DESTAQUES
@@ -392,14 +382,119 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 .margin-top-95 { margin-top: 95px; }
 .margin-bottom-25 { margin-bottom: 25px; }
 
+/***
+- ACESSIBILIDADE
+***/
+
+/*
+- BARRA DE ACESSIBILIDADE
+*/
+
+.accessibility-shortcuts {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 99999;
+}
+.accessibility-shortcuts a {
+	padding: 10px;
+	color: #fff;
+	display: inline-block;
+	opacity: 0;
+	border-left: 1px solid #fff;
+	background-color: rgba(156, 51, 63,.9);
+	z-index: -2;
+}
+.accessibility-shortcuts a:focus {
+	opacity: 1;
+	z-index: 2;
+}
+.accessibility-shortcuts a span {
+	padding: 0 5px;
+	color: #9c333f;
+	background: #fff;
+}
+
+.accessibility-options {
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	list-style: none;
+	position: fixed;
+	top: 32px;
+	left: 20px;
+	z-index: 99999;
+	background-color: rgba(255,255,255,.7);
+}
+.accessibility-options button {
+	font-size: 16px;
+	cursor: pointer;
+}
+.accessibility-options li + li { margin-left: 5px; }
+
 /*
 - ALTO CONTRASTE
 */
 
 body.contraste,
 body.contraste *,
-body[data-theme="mhn-theme-page"].contraste .page-header .title-header {
+body.contraste .page-header .title-header {
 	color: #fff !important;
-	border-color: #000 !important;
-	background: #000 !important;
+	border-color: #fff !important;
+	background-color: #000 !important;
+}
+
+body.contraste .search-box,
+body.contraste .collection-header--type-b { border: 2px solid #fff !important; }
+
+body.contraste .page-header .title-header h2:after,
+body.contraste .highlights-list__title-box:after { display: none !important; }
+
+body.contraste .navbar,
+body.contraste .page-header.page-height { border-bottom: 1px solid #fff !important; }
+
+body.contraste footer.tainacan-footer { border-top: 1px solid #fff !important; }
+
+body.contraste .tainacan-single-post article header .header-meta,
+body.contraste .theme-items-list a,
+body.contraste .dropdown .dropdown-menu .dropdown-content .dropdown-item,
+body.contraste .dropdown .dropdown-menu .dropdown-content .has-link a,
+body.contraste .dropdown .dropdown-menu .has-link .dropdown-content a,
+body.contraste .autocomplete .dropdown-menu .dropdown-content .dropdown-item,
+body.contraste .autocomplete .dropdown .dropdown-menu .dropdown-content .has-link a,
+body.contraste .dropdown .autocomplete .dropdown-menu .dropdown-content .has-link a,
+body.contraste .autocomplete .dropdown .dropdown-menu .has-link .dropdown-content a,
+body.contraste .dropdown .autocomplete .dropdown-menu .has-link .dropdown-content a,
+body.contraste .select:not(.is-loading)::after,
+body.contraste .table-container .table-wrapper table.tainacan-table .column-main-content p { color: #fff !important; }
+
+body.contraste .page-header .title-header.singular-title,
+body.contraste img,
+body.contraste .accessibility-options,
+body.contraste .tainacan-form .control.has-icons-right .icon { border: 1px solid #fff !important; }
+
+body.contraste footer .tainacan-footer-info .tainacan-footer-info--logo,
+body.contraste .collection-header--type-b .btn.trigger { border: none !important; }
+
+body.contraste .page-header.page-height > div.ph-title-description,
+body.contraste .collection-header--share .rotater,
+body.contraste .collection-header--share,
+body.contraste .collection-header--share .btn .mdi.mdi-share-variant,
+body.contraste .collection-header--share .btn .mdi,
+body.contraste .t-bg-collection .t-collection--info .t-collection--info-title,
+body.contraste .t-bg-collection .t-collection--info .t-collection--col-9,
+body.contraste .image-placeholder>h4,
+body.contraste .t-bg-collection .t-collection--info .t-collection--col-3,
+body.contraste .accessibility-shortcuts,
+body.contraste .accessibility-shortcuts li { background-color: transparent !important; }
+
+body.contraste .accessibility-shortcuts a span,
+body.contraste .tooltip .tooltip-inner {
+	color: #000 !important;
+	background-color: #fff !important;
 }

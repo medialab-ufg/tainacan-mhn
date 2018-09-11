@@ -43,6 +43,10 @@ var base = {
 						}
 					}
 			});
+
+			jQuery('#search-box__search').on('focus',function() {
+				_form.addClass('active');
+			});
 		}
 	},
 

@@ -10,6 +10,21 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> data-theme="mhn-theme-page">
+    <!-- MENU DE ACESSIBILIDADE -->
+    <ul class="accessibility-shortcuts" role="menubar">
+        <li role="menuitem"><a href="#content" accesskey="c">Ir para o conteúdo <span>c</span></a></li>
+        <li role="menuitem"><a href="#menu-menu-1" accesskey="m">Ir para o menu <span>m</span></a></li>
+        <li role="menuitem"><a href="#search-box__search" accesskey="b">Ir para a busca <span>b</span></a></li>
+        <li role="menuitem"><a href="#footer" accesskey="r">Ir para o rodapé <span>r</span></a></li>
+    </ul>
+
+    <ul class="accessibility-options" role="menubar">
+        <li role="menuitem"><button type="button" class="button-text-minus" accesskey="5">A-</button></li>
+        <li role="menuitem"><button type="button" class="button-text-default" accesskey="6">A</button></li>
+        <li role="menuitem"><button type="button" class="button-text-plus" accesskey="7">A+</button></li>
+        <li role="menuitem"><button type="button" class="button-high-contrast" accesskey="8">Alto Contraste</button></li>
+    </ul>
+
     <!-- BARRA DO GOVERNO -->
     <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;"> 
         <ul id="menu-barra-temp" style="list-style:none;">

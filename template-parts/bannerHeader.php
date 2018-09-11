@@ -40,24 +40,17 @@
         </div>
     </div>
 
-    <div class="accessibility-options">
-        <button type="button" class="button-text-minus">A-</button>
-        <button type="button" class="button-text-default">A</button>
-        <button type="button" class="button-text-plus">A+</button>
-        <button type="button" class="button-high-contrast">Alto Contraste</button>
-    </div>
-
     <form action="#" method="post" class="search-box">
         <fieldset>
             <legend>Formulário de busca</legend>
 
-            <input type="text">
+            <input type="text" id="search-box__search">
             <button type="submit"><i class="mdi mdi-magnify"></i></button>
         </fieldset>
     </form>
 
     <?php global $wp; ?>
-    <div class="collection-header--share">
+    <div class="collection-header--share collection-header--type-b">
         <div class="btn trigger">
             <span class="mdi mdi-share-variant"></span>
         </div>
