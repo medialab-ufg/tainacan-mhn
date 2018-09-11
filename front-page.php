@@ -39,6 +39,38 @@
 						</li>
 					</ul>
 				</div>
+				
+				<?php 
+				global $MHNViewCounter;
+				$popularItems = $MHNViewCounter->get_items(6);
+				?>
+				
+				<?php if ($popularItems->have_posts()) : ?>
+				
+					<div class="highlights-list margin-bottom-25">
+						<div class="highlights-list__title-box">
+							<h3 class="highlights-list__title">Itens mais visitados</h3>
+							<span class="highlights-list__sub">Subtítulo, se necessário for.</span>
+						</div>
+
+						<ul>
+							
+							<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
+							
+								<li>
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail(); ?>
+										<strong><?php the_title(); ?></strong>
+									</a>
+								</li>
+
+							<?php endwhile; ?>
+
+						</ul>
+					</div>
+					
+				<?php endif; ?>
+				
 				<?php //get_template_part('template-parts/loop', 'singular'); ?>
 			</div><!-- /#content -->
 		</div>
