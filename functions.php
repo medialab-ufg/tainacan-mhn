@@ -32,3 +32,12 @@ add_action( 'after_setup_theme', 'mhn_top_menu' );
 function mhn_top_menu() {
 	register_nav_menu( 'navMenuaboveHeader', __( 'Nav Menu Above Header', 'tainacan-theme' ) );
 }
+
+/**
+ * Adiciona classes extras à lista de elementos que mudam de cor de acordo com a preferência do usuário
+ * 
+ */
+function add_class_customize($colors) {
+    return ".tainacan-single-post article .title-content-items { color: {$colors['link_color']}; }";
+}
+add_filter('tainacan_customize_colors', 'add_class_customize');

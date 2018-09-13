@@ -299,8 +299,8 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 - LISTA DE DESTAQUES
 */
 
-body[data-theme="mhn-theme-page"] .highlights-list { width: 100%; }
-body[data-theme="mhn-theme-page"] .highlights-list__title {
+.highlights-list { width: 100%; }
+.highlights-list__title {
 	margin: 0;
 	font-weight: 600;
 	font-family: 'Roboto', sans-serif;
@@ -308,7 +308,7 @@ body[data-theme="mhn-theme-page"] .highlights-list__title {
 	color: #9a3541;
 	line-height: normal;
 }
-body[data-theme="mhn-theme-page"] .highlights-list__sub {
+.highlights-list__sub {
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
 	font-style: italic;
@@ -317,14 +317,14 @@ body[data-theme="mhn-theme-page"] .highlights-list__sub {
 	line-height: normal;
 	display: block;
 }
-body[data-theme="mhn-theme-page"] .highlights-list__title + .highlights-list__sub { margin: 10px 0 0; }
-body[data-theme="mhn-theme-page"] .highlights-list__title-box {
+.highlights-list__title + .highlights-list__sub { margin: 10px 0 0; }
+.highlights-list__title-box {
 	width: 100%;
 	margin: 0 0 25px;
 	padding: 0 0 35px;
 	position: relative;
 }
-body[data-theme="mhn-theme-page"] .highlights-list__title-box:after {
+.highlights-list__title-box:after {
 	content: "";
 	width: 100%;
 	max-width: 230px;
@@ -334,7 +334,7 @@ body[data-theme="mhn-theme-page"] .highlights-list__title-box:after {
 	bottom: 0;
 	background-color: #c34250;
 }
-body[data-theme="mhn-theme-page"] .highlights-list ul {
+.highlights-list ul {
 	margin: 0 -20px;
 	padding: 0;
 	display: flex;
@@ -342,22 +342,22 @@ body[data-theme="mhn-theme-page"] .highlights-list ul {
 	justify-content: space-between;
 	list-style: none;
 }
-body[data-theme="mhn-theme-page"] .highlights-list li {
+.highlights-list li {
 	width: 100%;
 	max-width: 349px;
 	margin: 25px 20px;
 }
-body[data-theme="mhn-theme-page"] .highlights-list li a {
+.highlights-list li a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-body[data-theme="mhn-theme-page"] .highlights-list img {
+.highlights-list img {
 	width: 100%;
 	margin-bottom: 22px;
 	display: block;
 }
-body[data-theme="mhn-theme-page"] .highlights-list strong {
+.highlights-list strong {
 	font-weight: 700;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1rem;
@@ -367,12 +367,52 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 }
 
 @media screen and (max-width: 768px) {
-	body[data-theme="mhn-theme-page"] .highlights-list ul {
+	.highlights-list ul {
 		flex-flow: row wrap;
 		justify-content: center;
 	}
-	body[data-theme="mhn-theme-page"] .highlights-list li { margin: 10px 20px; }
-	body[data-theme="mhn-theme-page"] .highlights-list img { margin-bottom: 3px; }
+	.highlights-list li { margin: 10px 20px; }
+	.highlights-list img { margin-bottom: 3px; }
+}
+
+/* LISTA DE QUADRADOS */
+
+ul.highlights-squares {
+	margin: 0 -5px;
+	padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	list-style: none;
+}
+ul.highlights-squares li {
+	width: 33.33%;
+	max-width: none;
+	margin: 0;
+	padding: 5px;
+}
+ul.highlights-squares li a {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+ul.highlights-squares li img {
+	width: 100%;
+	height: 100%;
+	max-width: 411px;
+	max-height: 411px;
+	margin: 0 auto;
+	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	ul.highlights-squares li {
+		width: 50%;
+		max-height: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	ul.highlights-squares li { width: 100%; }
 }
 
 /*
@@ -550,7 +590,11 @@ body.contraste .dropdown .autocomplete .dropdown-menu .dropdown-content .has-lin
 body.contraste .autocomplete .dropdown .dropdown-menu .has-link .dropdown-content a,
 body.contraste .dropdown .autocomplete .dropdown-menu .has-link .dropdown-content a,
 body.contraste .select:not(.is-loading)::after,
-body.contraste .table-container .table-wrapper table.tainacan-table .column-main-content p { color: #fff !important; }
+body.contraste .table-container .table-wrapper table.tainacan-table .column-main-content p,
+body.contraste .tainacan-title-page ul li,
+body.contraste .tainacan-title-page ul li a,
+body.contraste #menubelowHeader .menu-item a::after,
+body.contraste .menu-shadow button[data-toggle='dropdown']::after { color: #fff !important; }
 
 body.contraste .page-header .title-header.singular-title,
 body.contraste img,
