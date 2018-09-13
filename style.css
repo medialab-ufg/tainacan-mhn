@@ -447,7 +447,6 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 	padding: 0;
 	display: flex;
 	list-style: none;
-	background-color: rgba(255,255,255,.7);
 }
 .accessibility-options li {
 	height: 24px;
@@ -521,7 +520,8 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 
 body.contraste,
 body.contraste *,
-body.contraste .page-header .title-header {
+body.contraste .page-header .title-header,
+body.contraste .button.is-outlined {
 	color: #fff !important;
 	border-color: #fff !important;
 	background-color: #000 !important;
@@ -570,7 +570,8 @@ body.contraste .t-bg-collection .t-collection--info .t-collection--col-9,
 body.contraste .image-placeholder>h4,
 body.contraste .t-bg-collection .t-collection--info .t-collection--col-3,
 body.contraste .accessibility-shortcuts,
-body.contraste .accessibility-shortcuts li { background-color: transparent !important; }
+body.contraste .accessibility-shortcuts li,
+body.contraste .tainacan-form .select select { background-color: transparent !important; }
 
 body.contraste .accessibility-shortcuts a span,
 body.contraste .tooltip .tooltip-inner {
