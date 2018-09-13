@@ -424,7 +424,7 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 	font-size: 12px;
 	color: #000;
 	line-height: normal;
-	display: inline-block;
+	display: block;
 }
 .accessibility-shortcuts a span {
 	width: 18px;
@@ -442,24 +442,34 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 }
 
 .accessibility-options {
+	height: 24px;
 	margin: 0 -10px;
 	padding: 0;
 	display: flex;
 	list-style: none;
 	background-color: rgba(255,255,255,.7);
 }
-.accessibility-options li { margin: 0 10px; }
+.accessibility-options li {
+	height: 24px;
+	margin: 0 10px;
+	display: flex;
+	align-items: center;
+}
 .accessibility-options span {
-	margin-right: 2px;
+	height: 14px;
+	margin-right: 6px;
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	color: #000;
 	line-height: normal;
+	display: block;
 }
 .accessibility-options button {
 	width: 22px;
 	height: 22px;
+	margin: 0;
+	padding: 0;
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
 	font-size: 11px;
@@ -467,12 +477,12 @@ body[data-theme="mhn-theme-page"] .highlights-list strong {
 	line-height: 22px;
 	text-align: center;
 	cursor: pointer;
-	display: inline-block;
+	display: block;
 	border-radius: 50%;
 	border: none;
 	background: #9c333f;
 }
-.accessibility-options button + button { margin-left: 2px; }
+.accessibility-options button + button { margin-left: 6px; }
 .accessibility-options .button-high-contrast {
 	text-indent: -99999px;
 	overflow: hidden;
