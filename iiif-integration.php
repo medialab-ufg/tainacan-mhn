@@ -102,7 +102,7 @@ class MHNIIIF {
 		$meta_id = $this->get_option('iiif_num_registro_meta_id');
 		$id = get_post_meta($item->get_id(), $meta_id, true);
 		
-		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a></div>';
+		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Reprodução/ Google</span></div>';
 	}
 	
 	function footer() {
@@ -128,6 +128,7 @@ class MHNIIIF {
 					<div id="map">
 						
 					</div>
+					<span class="caption-image-modal">Reprodução/ Google</span>
 				</div>
 			</div>
 		</div>

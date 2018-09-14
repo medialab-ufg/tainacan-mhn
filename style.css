@@ -29,6 +29,7 @@ body {
 	justify-content: center;
 }
 .openseadragon-wrapper-image {
+	padding-bottom: 20px;
 	display: inline-block;
 	position: relative;
 }
@@ -48,7 +49,7 @@ body {
 	display: inline-block;
 	position: absolute;
 	right: 15px;
-	bottom: 15px;
+	bottom: 35px;
 	border-radius: 50%;
 	background-color: rgba(255,255,255,.9);
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
@@ -377,6 +378,11 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 
 /* LISTA DE QUADRADOS */
 
+.wrapper-highlights-squares {
+	width: 100%;
+	max-width: 1253px;
+	margin: 0 auto;
+}
 ul.highlights-squares {
 	margin: 0 -5px;
 	padding: 0;
@@ -413,6 +419,26 @@ ul.highlights-squares li img {
 }
 @media screen and (max-width: 600px) {
 	ul.highlights-squares li { width: 100%; }
+}
+
+/* MODAL DE IMAGEM */
+
+.caption-image-modal {
+	font-weight: 400;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #000;
+	line-height: normal;
+	display: block;
+	position: absolute;
+}
+.openseadragon-wrapper-image .caption-image-modal {
+	left: 0;
+	bottom: 0;
+}
+.modal-content .caption-image-modal {
+	left: 5px;
+	bottom: 2px;
 }
 
 /*

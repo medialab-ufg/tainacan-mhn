@@ -54,19 +54,21 @@
 							</div>
 						</div>
 
-						<ul class="highlights-squares">
-							
-							<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
-							
-								<li>
-									<a href="<?php the_permalink(); ?>">
-										<?php the_post_thumbnail('tainacan-medium'); ?>
-									</a>
-								</li>
+						<div class="wrapper-highlights-squares">
+							<ul class="highlights-squares">
+								
+								<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
+								
+									<li>
+										<a href="<?php the_permalink(); ?>">
+											<?php the_post_thumbnail('tainacan-medium'); ?>
+										</a>
+									</li>
 
-							<?php endwhile; ?>
+								<?php endwhile; ?>
 
-						</ul>
+							</ul>
+						</div>
 					</div>
 					
 				<?php endif; ?>
