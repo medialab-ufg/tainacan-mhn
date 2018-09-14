@@ -411,7 +411,7 @@ ul.highlights-squares li img {
 		max-height: none;
 	}
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	ul.highlights-squares li { width: 100%; }
 }
 
