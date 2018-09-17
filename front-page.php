@@ -17,7 +17,7 @@
 						<span class="highlights-list__sub">Subtítulo, se necessário for.</span>
 					</div>
 					
-					<?php $expoUrl = 'reserva-tecnica/#/?fetch_only%5B0%5D=thumbnail&fetch_only%5B1%5D=creation_date&fetch_only%5B2%5D=author_name&fetch_only%5B3%5D=title&fetch_only%5B4%5D=description&fetch_only%5Bmeta%5D%5B0%5D=0&view_mode=masonry&perpage=96&paged=1&order=DESC&orderby=date&taxquery%5B0%5D%5Btaxonomy%5D=tnc_tax_85161&taxquery%5B0%5D%5Bterms%5D={{TERM_ID}}&taxquery%5B0%5D%5Bcompare%5D=IN'; ?>
+					<?php $expoUrl = 'reserva-tecnica/#/?fetch_only%5B0%5D=thumbnail&fetch_only%5B1%5D=creation_date&fetch_only%5B2%5D=author_name&fetch_only%5B3%5D=title&fetch_only%5B4%5D=description&fetch_only%5Bmeta%5D%5B0%5D=0&view_mode=masonry&perpage=48&paged=1&order=DESC&orderby=date&taxquery%5B0%5D%5Btaxonomy%5D=tnc_tax_85161&taxquery%5B0%5D%5Bterms%5D={{TERM_ID}}&taxquery%5B0%5D%5Bcompare%5D=IN'; ?>
 					
 					<ul>
 						<li>
