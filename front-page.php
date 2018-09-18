@@ -23,7 +23,7 @@
 						<li>
 							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21291, $expoUrl) ); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
-								<strong>DeMartin</strong>
+								<strong>De Martino</strong>
 							</a>
 						</li>
 						<li>
@@ -42,7 +42,7 @@
 				</div>
 				<?php 
 				global $MHNViewCounter;
-				$popularItems = $MHNViewCounter->get_items(6);
+				$popularItems = $MHNViewCounter->get_items(3);
 				?>
 				
 				<?php if ($popularItems->have_posts()) : ?>
@@ -62,7 +62,8 @@
 								
 									<li>
 										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail('tainacan-medium'); ?>
+											<?php the_post_thumbnail('tainacan-medium-full'); ?>
+											<strong><?php the_title(); ?></strong>
 										</a>
 									</li>
 
