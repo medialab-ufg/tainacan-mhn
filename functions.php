@@ -38,6 +38,6 @@ function mhn_top_menu() {
  * 
  */
 function add_class_customize($colors) {
-    return ".tainacan-single-post article .title-content-items { color: {$colors['link_color']}; }";
+	return ".tainacan-single-post article .title-content-items { color: {$colors['link_color']}; }";
 }
-add_filter('tainacan_customize_colors', 'add_class_customize');
+add_filter('tainacan-customize-css-class', 'add_class_customize');
