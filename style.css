@@ -343,6 +343,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	justify-content: space-between;
 	list-style: none;
 }
+/*
 .highlights-list li {
 	width: 100%;
 	max-width: 349px;
@@ -353,7 +354,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	height: 100%;
 	display: block;
 }
-
+*/
 .highlights-list img {
 	width: 100%;
 	margin-bottom: 22px;
