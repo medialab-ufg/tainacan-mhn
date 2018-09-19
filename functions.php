@@ -35,6 +35,9 @@ $MHNViewCounter = new MHNViewCounter();
 add_action( 'after_setup_theme', 'mhn_top_menu' );
 function mhn_top_menu() {
 	register_nav_menu( 'navMenuaboveHeader', __( 'Nav Menu Above Header', 'tainacan-theme' ) );
+	
+	show_admin_bar( false );
+	
 }
 
 /**
