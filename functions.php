@@ -14,6 +14,10 @@ function mhn_enqueue_styles() {
 	wp_enqueue_style('google-custom-fonts', '//fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i');
 
 	wp_enqueue_script( 'mhn', get_stylesheet_directory_uri() . '/assets/js/mhn.js', array('jquery') );
+	wp_localize_script('mhn', 'mhn', [
+		'search_target_url' => site_url('reserva-tecnica/#/')
+	]);
+	
 	wp_enqueue_script( 'openseadragon', get_stylesheet_directory_uri() . '/openseadragon/openseadragon.js' );
 }
 add_action( 'wp_enqueue_scripts', 'mhn_enqueue_styles' );
