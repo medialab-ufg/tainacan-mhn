@@ -40,11 +40,11 @@
         </div>
     </div>
 
-    <form action="#" method="post" class="search-box">
+    <form action="<?php echo site_url('reserva-tecnica/#/'); ?>" method="get" class="search-box" id="mhn-search">
         <fieldset>
             <legend>Formulário de busca</legend>
 
-            <input type="text" id="search-box__search">
+            <input type="text" id="search-box__search" name="search">
             <button type="submit"><i class="mdi mdi-magnify"></i></button>
         </fieldset>
     </form>
