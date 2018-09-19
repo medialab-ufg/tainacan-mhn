@@ -16,32 +16,33 @@
 						<h3 class="highlights-list__title">Exposições em destaque</h3>
 						<span class="highlights-list__sub">Subtítulo, se necessário for.</span>
 					</div>
-
+					
+					<?php $expoUrl = 'reserva-tecnica/#/?fetch_only%5B0%5D=thumbnail&fetch_only%5B1%5D=creation_date&fetch_only%5B2%5D=author_name&fetch_only%5B3%5D=title&fetch_only%5B4%5D=description&fetch_only%5Bmeta%5D%5B0%5D=0&view_mode=masonry&perpage=48&paged=1&order=DESC&orderby=date&taxquery%5B0%5D%5Btaxonomy%5D=tnc_tax_85161&taxquery%5B0%5D%5Bterms%5D={{TERM_ID}}&taxquery%5B0%5D%5Bcompare%5D=IN'; ?>
+					
 					<ul>
 						<li>
-							<a href="#">
-								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fke/colecao_001.jpg'; ?>" alt="Coleção">
-								<strong>Aspectos do Brasil republicano</strong>
+							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21291, $expoUrl) ); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
+								<strong>De Martino</strong>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fke/colecao_001.jpg'; ?>" alt="Coleção">
+							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21486, $expoUrl) ); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/retratos.jpg'; ?>" alt="Coleção">
 								<strong>Retratos do Império</strong>
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/fke/colecao_001.jpg'; ?>" alt="Coleção">
+							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21361, $expoUrl) ); ?>">
+								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/paisagens.jpg'; ?>" alt="Coleção">
 								<strong>Paisagens cariocas</strong>
 							</a>
 						</li>
 					</ul>
 				</div>
-				
 				<?php 
 				global $MHNViewCounter;
-				$popularItems = $MHNViewCounter->get_items(6);
+				$popularItems = $MHNViewCounter->get_items(3);
 				?>
 				
 				<?php if ($popularItems->have_posts()) : ?>
@@ -61,7 +62,8 @@
 								
 									<li>
 										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail('tainacan-medium'); ?>
+											<?php the_post_thumbnail('tainacan-medium-full'); ?>
+											<strong><?php the_title(); ?></strong>
 										</a>
 									</li>
 

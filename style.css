@@ -343,6 +343,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	justify-content: space-between;
 	list-style: none;
 }
+/*
 .highlights-list li {
 	width: 100%;
 	max-width: 349px;
@@ -353,6 +354,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	height: 100%;
 	display: block;
 }
+*/
 .highlights-list img {
 	width: 100%;
 	margin-bottom: 22px;
@@ -367,6 +369,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	display: block;
 }
 
+
 @media screen and (max-width: 768px) {
 	.highlights-list ul {
 		flex-flow: row wrap;
@@ -377,7 +380,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 }
 
 /* LISTA DE QUADRADOS */
-
+/*
 .wrapper-highlights-squares {
 	width: 100%;
 	max-width: 1253px;
@@ -410,7 +413,7 @@ ul.highlights-squares li img {
 	margin: 0 auto;
 	display: block;
 }
-
+*/
 @media screen and (max-width: 768px) {
 	ul.highlights-squares li {
 		width: 50%;

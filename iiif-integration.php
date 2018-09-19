@@ -102,7 +102,8 @@ class MHNIIIF {
 		$meta_id = $this->get_option('iiif_num_registro_meta_id');
 		$id = get_post_meta($item->get_id(), $meta_id, true);
 		
-		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Reprodução/ Google</span></div>';
+		//return '<div class="openseadragon-wrapper-image"><img src="https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Imagem da Google</span></div>';
+		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Imagem da Google</span></div>';
 	}
 	
 	function footer() {
@@ -128,7 +129,7 @@ class MHNIIIF {
 					<div id="map">
 						
 					</div>
-					<span class="caption-image-modal">Reprodução/ Google</span>
+					<span class="caption-image-modal">Imagem da Google</span>
 				</div>
 			</div>
 		</div>
@@ -143,7 +144,35 @@ class MHNIIIF {
 		        defaultZoomLevel:   0,
 		        sequenceMode:       true,
 				showNavigator:		true,
-		        tileSources:   ['<?php echo $url; ?>']
+				showSequenceControl: false,
+				prefixUrl: '<?php echo get_stylesheet_directory_uri(); ?>/assets/icons/',
+				navImages: {
+					zoomIn: {
+						REST: 'zoom_in.png',
+						GROUP: 'zoom_in.png',
+						HOVER: 'hover/zoom_in.png',
+						DOWN: 'active/zoom_in.png'
+					},
+					zoomOut: {
+						REST: 'zoom_out.png',
+						GROUP: 'zoom_out.png',
+						HOVER: 'hover/zoom_out.png',
+						DOWN: 'active/zoom_out.png'
+					},
+					home: {
+						REST: 'home.png',
+						GROUP: 'home.png',
+						HOVER: 'hover/home.png',
+						DOWN: 'active/home.png'
+					},
+					fullpage: {
+						REST: 'full_screen.png',
+						GROUP: 'full_screen.png',
+						HOVER: 'hover/full_screen.png',
+						DOWN: 'active/full_screen.png'
+					}
+				},
+		        tileSources:   ['<?php echo $url; //echo 'https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/info.json'; ?>']
 		    });
 		</script>
 		<?php
