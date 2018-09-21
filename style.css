@@ -75,7 +75,7 @@ body {
 	max-width: none;
 	height: 100%;
 }
-.modal-content { height: 100%; }
+.modal--super-zoom { height: 100%; }
 #map {
 	width: 100%;
 	height: 100%;

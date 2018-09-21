@@ -124,7 +124,7 @@ class MHNIIIF {
 		
 		<div class="modal fade" id="image-modal" role="dialog">
 			<div class="modal-dialog">
-				<div class="modal-content">
+				<div class="modal-content modal--super-zoom">
 					<a href="#" id="close-image-modal" class="mdi mdi-window-close"></a>
 					<div id="map">
 						
