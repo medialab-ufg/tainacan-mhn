@@ -8,6 +8,17 @@ jQuery( document ).ready(function() {
 	base.modal.executar('#open-image-modal','#image-modal','show');
 	base.modal.executar('#close-image-modal','#image-modal','hide');
 	base.searchBox.manipular();
+	
+	
+	jQuery('#mhn-search').submit(function(e) {
+		e.preventDefault();
+		var val = jQuery('#search-box__search').val();
+		if (val) {
+			window.location.href = mhn.search_target_url + '?search=' + val;
+		}
+		return;
+	});
+	
 });
 
 var base = {
