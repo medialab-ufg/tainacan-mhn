@@ -103,7 +103,7 @@ class MHNIIIF {
 		$id = get_post_meta($item->get_id(), $meta_id, true);
 		
 		//return '<div class="openseadragon-wrapper-image"><img src="https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Imagem da Google</span></div>';
-		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!500,500/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Imagem da Google</span></div>';
+		return '<div class="openseadragon-wrapper-image"><img src="http://cantaloupe.medialab.ufg.br/iiif/2/' . $id . '.jpg/full/!1000,800/0/default.jpg" /><a href="#" id="open-image-modal" class="mdi mdi-magnify-plus-outline"></a><span class="caption-image-modal">Imagem da Google</span></div>';
 	}
 	
 	function footer() {
