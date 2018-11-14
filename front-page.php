@@ -14,8 +14,8 @@
 				<div class="highlights-list margin-bottom-25">
 					<div class="margin-two-column">
 						<div class="highlights-list__title-box">
-							<h3 class="highlights-list__title">Exposições em destaque</h3>
-							<span class="highlights-list__sub">Subtítulo, se necessário for.</span>
+							<h3 class="highlights-list__title">Exposições</h3>
+							<span class="highlights-list__sub">A partir das coleções digitalizadas, o MHN propõe um recorte curatorial e oferece ao público exposições inéditas – confira!</span>
 						</div>
 					</div>
 
@@ -25,7 +25,7 @@
 						<li>
 							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21291, $expoUrl) ); ?>">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
-								<strong>De Martino</strong>
+								<strong>Marinhas - De Martino</strong>
 							</a>
 						</li>
 						<li>
@@ -52,8 +52,8 @@
 					<div class="highlights-list margin-bottom-25">
 						<div class="margin-two-column">
 							<div class="highlights-list__title-box">
-								<h3 class="highlights-list__title">Itens mais visitados</h3>
-								<span class="highlights-list__sub">Subtítulo, se necessário for.</span>
+								<h3 class="highlights-list__title">Itens mais acessados</h3>
+								<span class="highlights-list__sub">Conheça as peças de nosso acervo mais populares entre nossos visitantes.</span>
 							</div>
 						</div>
 
