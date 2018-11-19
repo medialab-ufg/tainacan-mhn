@@ -55,7 +55,7 @@ class MHNIIIF {
 	function options_page() {
 		?>
 		  <div class="wrap span-20">
-		    <h2>Opões MHN</h2>
+		    <h2>Opções MHN</h2>
 
 		    <form action="options.php" method="post" class="clear prepend-top">
 		      <?php settings_fields('mhn_options_group'); ?>
@@ -76,7 +76,7 @@ class MHNIIIF {
 		          <input type="text" id="iiif_flag_meta_id" class="text" name="mhn_options[iiif_flag_meta_id]" value="<?php echo htmlspecialchars($options['iiif_flag_meta_id']); ?>"/>
 		          <br/><br/>
 				  
-				  <label for="iiif_num_registro_meta_id"><strong>ID do Metadado que traz o valor do nome da imagem (Número de registro no SERET)</strong></label><br/>
+				  <label for="iiif_num_registro_meta_id"><strong>ID do Metadado que retorna o valor do nome da imagem (Número de registro no SERET)</strong></label><br/>
 		          <input type="text" id="iiif_num_registro_meta_id" class="text" name="mhn_options[iiif_num_registro_meta_id]" value="<?php echo htmlspecialchars($options['iiif_num_registro_meta_id']); ?>"/>
 		          <br/><br/>
 		          
