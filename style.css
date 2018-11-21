@@ -586,6 +586,16 @@ ul.highlights-squares li img {
 	.accessibility-options { margin-top: 20px; }
 }
 
+/**
+	Footer
+*/
+.tainacan-footer .tainacan-mhn-footer--barra-logos .col {
+	align-self: center;
+}
+.tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
+	width: 130px;
+}
+
 /*
 - ALTO CONTRASTE
 */
