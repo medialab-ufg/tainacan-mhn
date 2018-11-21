@@ -19,23 +19,21 @@
 						</div>
 					</div>
 
-					<?php $expoUrl = 'reserva-tecnica/#/?fetch_only%5B0%5D=thumbnail&fetch_only%5B1%5D=creation_date&fetch_only%5B2%5D=author_name&fetch_only%5B3%5D=title&fetch_only%5B4%5D=description&fetch_only%5Bmeta%5D%5B0%5D=0&view_mode=masonry&perpage=48&paged=1&order=DESC&orderby=date&taxquery%5B0%5D%5Btaxonomy%5D=tnc_tax_85161&taxquery%5B0%5D%5Bterms%5D%5B0%5D={{TERM_ID}}&taxquery%5B0%5D%5Bcompare%5D=IN'; ?>
-
 					<ul>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21291, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link(21291, 'tnc_tax_85161'); ?>/#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
 								<strong>Marinhas - De Martino</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21486, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link(21486, 'tnc_tax_85161'); ?>/#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/retratos.jpg'; ?>" alt="Coleção">
 								<strong>Retratos do Império</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21361, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link(21361, 'tnc_tax_85161'); ?>/#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/paisagens.jpg'; ?>" alt="Coleção">
 								<strong>Paisagens cariocas</strong>
 							</a>
