@@ -589,11 +589,11 @@ ul.highlights-squares li img {
 /**
 	Footer
 */
-.tainacan-footer .tainacan-mhn-footer--barra-logos .col {
+.tainacan-footer .tainacan-mhn-footer--barra-logos .col-12 {
 	align-self: center;
 }
 .tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
-	width: 130px;
+	width: 140px;
 }
 
 /*

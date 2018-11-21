@@ -58,12 +58,12 @@
         </div>
 
         <div class="row p-4 tainacan-mhn-footer--barra-logos text-white text-center">
-            <div class="col"><img src="" alt=""></div>
-            <div class="col"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/mhn.png" alt=""></div>
-            <div class="col"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/SBM.gif" alt=""></div>
-            <div class="col"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/ibram.png" alt=""></div>
-            <div class="col"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo-ministeriodacultura.png" alt=""></div>
-            <div class="col"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/nome-governo-federal.png" class="not-width" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/aanh.png" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/mhn.png" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/sbm.png" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/ibram.png" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo-ministeriodacultura.png" alt=""></div>
+            <div class="col-12 col-sm"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/nome-governo-federal.png" class="not-width" alt=""></div>
         </div>
 
     </footer>
