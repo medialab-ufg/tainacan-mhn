@@ -51,4 +51,4 @@
     </div>
 
     <!-- Get the menu if is create in panel admin -->
-    <?php get_template_part( 'template-parts/menuAboveBanner' ); ?>
+    <?php get_template_part( 'template-parts/menuabovebanner' ); ?>
