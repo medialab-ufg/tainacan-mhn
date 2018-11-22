@@ -47,7 +47,7 @@
 
 				<?php if ($popularItems->have_posts()) : ?>
 
-					<div class="highlights-list margin-bottom-25">
+					<div class="highlights-list margin-bottom-25 margin-top-95">
 						<div class="margin-two-column">
 							<div class="highlights-list__title-box">
 								<h3 class="highlights-list__title">Itens mais acessados</h3>
