@@ -591,6 +591,17 @@ ul.highlights-squares li img {
 /**
 	Footer
 */
+footer.tainacan-footer {
+	background-color: #9c333f;
+}
+footer hr.bg-scooter {
+	background-color: #c34250 !important;
+	height: 4px;
+}
+.tainacan-footer .tainacan-mhn-footer--barra-logos {
+	padding-bottom: 50px !important;
+	margin-top: 50px;
+}
 .tainacan-footer .tainacan-mhn-footer--barra-logos .col-12 {
 	align-self: center;
 }
