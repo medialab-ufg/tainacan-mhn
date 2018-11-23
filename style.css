@@ -273,6 +273,9 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 }
 .search-box button[type=submit] i.mdi{ border-radius: 50%; }
 
+.search-box button[type=submit]:focus {
+    outline: none;
+}
 /* BOX DE COMPARTILHAMENTO */
 
 .collection-header--type-b {
