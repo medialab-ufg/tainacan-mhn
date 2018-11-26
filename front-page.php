@@ -2,9 +2,9 @@
 
 
 <!-- Get the banner to display -->
-<?php get_template_part( 'template-parts/bannerHeader' ); ?>
+<?php get_template_part( 'template-parts/bannerheader' ); ?>
 <!-- Get the menu if is create in panel admin -->
-<?php get_template_part( 'template-parts/menuBellowBanner' ); ?>
+<?php get_template_part( 'template-parts/menubellowbanner' ); ?>
 
 <div class="container-fluid margin-top-95 max-large">
 	<div class="row">
@@ -19,23 +19,21 @@
 						</div>
 					</div>
 
-					<?php $expoUrl = 'reserva-tecnica/#/?fetch_only%5B0%5D=thumbnail&fetch_only%5B1%5D=creation_date&fetch_only%5B2%5D=author_name&fetch_only%5B3%5D=title&fetch_only%5B4%5D=description&fetch_only%5Bmeta%5D%5B0%5D=0&view_mode=masonry&perpage=48&paged=1&order=DESC&orderby=date&taxquery%5B0%5D%5Btaxonomy%5D=tnc_tax_85161&taxquery%5B0%5D%5Bterms%5D%5B0%5D={{TERM_ID}}&taxquery%5B0%5D%5Bcompare%5D=IN'; ?>
-
 					<ul>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21291, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link($expo_martino_term_id, $expo_taxonomy); ?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
 								<strong>Marinhas - De Martino</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21486, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link($expo_retratos_term_id, $expo_taxonomy); ?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/retratos.jpg'; ?>" alt="Coleção">
 								<strong>Retratos do Império</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo site_url( str_replace('{{TERM_ID}}', 21361, $expoUrl) ); ?>">
+							<a href="<?php echo get_term_link($expo_paisagens_term_id, $expo_taxonomy); ?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/paisagens.jpg'; ?>" alt="Coleção">
 								<strong>Paisagens cariocas</strong>
 							</a>
@@ -49,7 +47,7 @@
 
 				<?php if ($popularItems->have_posts()) : ?>
 
-					<div class="highlights-list margin-bottom-25">
+					<div class="highlights-list margin-bottom-25 margin-top-95">
 						<div class="margin-two-column">
 							<div class="highlights-list__title-box">
 								<h3 class="highlights-list__title">Itens mais acessados</h3>

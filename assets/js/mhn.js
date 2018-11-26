@@ -42,13 +42,14 @@ var base = {
 					// Se o form está fechado, o clique abre o formulário
 					if (!_form.hasClass('active')) {
 						_form.addClass('active');
-
+						_form.find('input[type=text]').attr('placeholder', 'Explore o acervo MHN');
 						return false;
 					} else {
 						// Se o campo estiver vazio, o clique no botão fecha o form novamente
 						var campo = _form.find('input[type=text]').val();
 						if (campo == '') {
 							_form.removeClass('active');
+							_form.find('input[type=text]').removeAttr('placeholder');
 
 							return false;
 						}
