@@ -1,5 +1,18 @@
 <?php
 
+// Variáveis globais do Tema 
+// Sobreescreva elas no seu ambiente de desenvolvimento
+// copiando o dev-vars-sample.php e salvando como dev-vars.php
+
+global $expo_taxonomy, $expo_retratos_term_id, $expo_paisagens_term_id, $expo_martino_term_id;
+$expo_taxonomy = 'tnc_tax_85161';
+$expo_retratos_term_id = 21486;
+$expo_paisagens_term_id = 21361;
+$expo_martino_term_id = 21291;
+
+if (file_exists(get_stylesheet_directory() . '/dev-vars.php')) {
+	require_once('dev-vars.php');
+}
 // Estilos
 function mhn_enqueue_styles() {
 
@@ -34,7 +47,7 @@ $MHNViewCounter = new MHNViewCounter();
  */
 add_action( 'after_setup_theme', 'mhn_top_menu' );
 function mhn_top_menu() {
-	register_nav_menu( 'navMenuaboveHeader', __( 'Nav Menu Above Header', 'tainacan-theme' ) );
+	register_nav_menu( 'navMenuaboveHeader', __( 'Nav Menu Above Header', 'tainacan-interface' ) );
 	
 	show_admin_bar( false );
 	
@@ -45,6 +58,8 @@ function mhn_top_menu() {
  * 
  */
 function add_class_customize($colors) {
-	return ".tainacan-single-post article .title-content-items { color: {$colors['link_color']}; }";
+	return <<<CSS
+	.tainacan-single-post article .title-content-items { color: {$colors['tainacan_link_color']}; }
+CSS;
 }
 add_filter('tainacan-customize-css-class', 'add_class_customize');

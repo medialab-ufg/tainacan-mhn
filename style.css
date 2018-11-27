@@ -275,6 +275,9 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 }
 .search-box button[type=submit] i.mdi{ border-radius: 50%; }
 
+.search-box button[type=submit]:focus {
+    outline: none;
+}
 /* BOX DE COMPARTILHAMENTO */
 
 .collection-header--type-b {
@@ -314,9 +317,8 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 .highlights-list__sub {
 	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
-	font-style: italic;
 	font-size: 1.13rem;
-	color: #85898b;
+	color: #000;
 	line-height: normal;
 	display: block;
 }
@@ -365,7 +367,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 .highlights-list strong {
 	font-weight: 700;
 	font-family: 'Roboto', sans-serif;
-	font-size: 1rem;
+	font-size: 18px;
 	color: #000;
 	line-height: normal;
 	display: block;
@@ -586,6 +588,27 @@ ul.highlights-squares li img {
 		justify-content: space-around;
 	}
 	.accessibility-options { margin-top: 20px; }
+}
+
+/**
+	Footer
+*/
+footer.tainacan-footer {
+	background-color: #9c333f;
+}
+footer hr.bg-scooter {
+	background-color: #c34250 !important;
+	height: 4px;
+}
+.tainacan-footer .tainacan-mhn-footer--barra-logos {
+	padding-bottom: 50px !important;
+	margin-top: 50px;
+}
+.tainacan-footer .tainacan-mhn-footer--barra-logos .col-12 {
+	align-self: center;
+}
+.tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
+	width: 140px;
 }
 
 /*
