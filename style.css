@@ -167,10 +167,12 @@ body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link:hover 
 @media screen and (max-width: 992px) {
 	body[data-theme="mhn-theme-page"] .navbar { justify-content: flex-start; }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	body[data-theme="mhn-theme-page"] .navbar-toggler[aria-expanded="true"] {
 		right: auto;
-		left: 20px;
+		left: 10px;
+		top: 130px;
+		transform: translate(0,0);
 	}
 }
 
