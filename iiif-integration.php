@@ -96,7 +96,7 @@ class MHNIIIF {
 		
 		$flag_id = $this->get_option('iiif_flag_meta_id');
 		if (get_post_meta($item->get_id(), $flag_id, true) != 'Sim') {
-			return $html . '<div>Imagem: MHN/Acervo</div>';
+			return '<div class="openseadragon-wrapper-image">' . $html . '<span class="caption-image-modal">Imagem: MHN/Acervo</span></div>';
 		}
 		
 		$meta_id = $this->get_option('iiif_num_registro_meta_id');
