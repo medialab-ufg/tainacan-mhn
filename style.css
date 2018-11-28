@@ -413,6 +413,8 @@ ul.highlights-squares li img {
 	width: auto;
 	margin: 0 auto;
 	display: block;
+	height: 326px;
+	margin-bottom: 22px;
 }
 
 @media screen and (max-width: 768px) {
