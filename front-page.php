@@ -9,7 +9,7 @@
 <div class="container-fluid margin-top-95 max-large">
 	<div class="row">
 
-		<div class="col-sm margin-one-column">
+		<div class="col-sm margin-one-column px-0">
 			<div id="content" role="main">
 				<div class="highlights-list margin-bottom-25">
 					<div class="margin-two-column">
