@@ -3,7 +3,7 @@
         <?php if ( is_active_sidebar( 'tainacan-sidebar-footer' ) ) { ?>
             <div class="row">
                 <div class="col-12 col-lg">
-                    <ul class="p-4 d-lg-flex justify-content-md-center mb-md-0">
+                    <ul class="p-4 d-lg-flex justify-content-md-left mb-md-0">
                         <?php dynamic_sidebar('tainacan-sidebar-footer'); ?>
                     </ul>
                 </div>
@@ -24,6 +24,8 @@
                         echo get_option('blogaddress', ''); 
                     }
                 ?>
+                    <a href="https://www.facebook.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="" style="width: 25px"></a>
+                    <a href="https://www.instagram.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" alt="" style="width: 25px"></a>
                 </p>
                 <p class="tainacan-footer-info--blog">
                     <?php 
@@ -59,7 +61,7 @@
         <hr class="bg-scooter" style="background-color: #c34250 !important;"/>
         <div class="row p-4 tainacan-mhn-footer--barra-logos text-white text-center">
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/aanh.png" alt=""></div>
-            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/mhn.png" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/lgo/mhn.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/sbm.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/ibram.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo-ministeriodacultura.png" alt=""></div>
