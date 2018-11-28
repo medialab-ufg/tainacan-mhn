@@ -3,7 +3,7 @@
         <?php if ( is_active_sidebar( 'tainacan-sidebar-footer' ) ) { ?>
             <div class="row">
                 <div class="col-12 col-lg">
-                    <ul class="p-4 d-lg-flex justify-content-md-center mb-md-0">
+                    <ul class="p-4 d-lg-flex justify-content-md-left mb-md-0">
                         <?php dynamic_sidebar('tainacan-sidebar-footer'); ?>
                     </ul>
                 </div>

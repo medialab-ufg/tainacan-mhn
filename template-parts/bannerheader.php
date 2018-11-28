@@ -36,7 +36,7 @@
                 
                 ?>
             </h2>
-            <p><?php bloginfo('description'); ?></p>
+            <p><?php bloginfo('description'); ?> <a href="http://mhn.acervos.museus.gov.br/reserva-tecnica">Explore nosso acervo</a></p>
         </div>
     </div>
 

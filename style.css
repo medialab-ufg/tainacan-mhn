@@ -179,7 +179,9 @@ body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link:hover 
 /*
 - DESTAQUE
 */
-
+body[data-theme="mhn-theme-page"] .page-header>div.ph-title-description {
+	z-index: 100;
+}
 body[data-theme="mhn-theme-page"] .page-header.page-height { height: 660px; }
 body[data-theme="mhn-theme-page"] .page-header.page-height > div.ph-title-description { margin-bottom: 165px; }
 body[data-theme="mhn-theme-page"] .page-header .title-header {
@@ -600,6 +602,14 @@ footer hr.bg-scooter {
 	background-color: #c34250 !important;
 	height: 4px;
 }
+
+footer ul li a {
+	color: #fff;
+}
+footer ul li a:hover {
+	color: #fff;
+}
+
 .tainacan-footer .tainacan-mhn-footer--barra-logos {
 	padding-bottom: 50px !important;
 	margin-top: 50px;
