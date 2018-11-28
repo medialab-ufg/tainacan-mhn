@@ -468,6 +468,8 @@ ul.highlights-squares li img {
 
 .accessibility-bar {
 	width: 100%;
+	position: relative;
+	z-index: 2;
 	background-color: #fff;
 }
 .accessibility-bar__container {
@@ -492,6 +494,7 @@ ul.highlights-squares li img {
 	left: -50px;
 	opacity: 0;
 	z-index: -2;
+	display: none;
 }
 .accessibility-shortcuts li { margin: 0 10px; }
 .accessibility-shortcuts a {
@@ -576,6 +579,8 @@ ul.highlights-squares li img {
 	background-color: #000;
 }
 
+#barra-brasil { overflow: hidden; }
+
 @media screen and (max-width: 800px) {
 	.accessibility-bar__container {
 		padding: 20px;
@@ -588,6 +593,48 @@ ul.highlights-squares li img {
 		justify-content: space-around;
 	}
 	.accessibility-options { margin-top: 20px; }
+}
+@media screen and (max-width: 768px) {
+	.accessibility-bar { height: 60px; }
+	.accessibility-bar__container {
+		height: 60px;
+		min-height: auto;
+		padding: 0 20px;
+		display: block;
+	}
+	.accessibility-bar .accessibility-shortcuts a {
+		padding: 5px 10px;
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		opacity: 0;
+		background-color: #fff;
+		z-index: -2;
+		transform: translate(-50%,50px);
+	}
+	.accessibility-bar .accessibility-shortcuts a:focus {
+		opacity: 1;
+		z-index: 2;
+	}
+	.accessibility-options {
+		width: 100%;
+		height: 60px;
+		margin: 0;
+		padding: 10px 0;
+		justify-content: center;
+	}
+	.accessibility-options li { height: auto; }
+	.accessibility-options button {
+		width: 40px;
+		height: 40px;
+		font-size: 22px !important;
+		line-height: 40px;
+	}
+	.accessibility-options button + button { margin-left: 20px; }
+	.accessibility-options .button-high-contrast:after {
+		width: 20px;
+		height: 40px;
+	}
 }
 
 /**
