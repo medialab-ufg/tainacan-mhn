@@ -139,7 +139,7 @@ body[data-theme="mhn-theme-page"] .navbar {
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	background-color: #9c333f;
+	background-color: #9e313c;
 }
 body[data-theme="mhn-theme-page"] .navbar-nav li,
 body[data-theme="mhn-theme-page"] nav.menu-belowheader #menubelowHeader>ul>li.menu-item {
@@ -187,8 +187,19 @@ body[data-theme="mhn-theme-page"] .page-header.page-height > div.ph-title-descri
 body[data-theme="mhn-theme-page"] .page-header .title-header {
 	width: 90%;
 	max-width: 800px;
-	max-height: 330px;
+	min-height: 330px;
+	max-height: none;
 	background-color: rgba(255,255,255,.8) !important;
+}
+
+@media only screen and (max-width: 576px) {
+	body[data-theme="mhn-theme-page"] .page-header .title-header {
+		width: 100%;
+		max-width: 100%;
+	}
+	.page-header.page-height>div {
+		margin-bottom: 0.1rem !important;
+	}
 }
 body[data-theme="mhn-theme-page"] .page-header .title-header.singular-title { padding: 28px 7% 33px; }
 body[data-theme="mhn-theme-page"] .page-header .title-header h2 {
@@ -218,6 +229,12 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	font-size: 1.13rem;
 	color: #000;
 	line-height: 1.69rem;
+}
+
+@media only screen and (max-width: 576px) {
+	body[data-theme="mhn-theme-page"] .page-header .title-header p {
+		font-size: 0.75rem;
+	}
 }
 
 /* BOX DE PESQUISA */
@@ -598,7 +615,7 @@ ul.highlights-squares li img {
 	Footer
 */
 footer.tainacan-footer {
-	background-color: #9c333f;
+	background-color: #9e313c;
 }
 footer hr.bg-scooter {
 	background-color: #c34250 !important;
