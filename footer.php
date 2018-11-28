@@ -24,6 +24,8 @@
                         echo get_option('blogaddress', ''); 
                     }
                 ?>
+                    <a href="https://www.facebook.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="" style="width: 25px"></a>
+                    <a href="https://www.instagram.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" alt="" style="width: 25px"></a>
                 </p>
                 <p class="tainacan-footer-info--blog">
                     <?php 
