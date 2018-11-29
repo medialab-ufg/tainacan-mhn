@@ -54,7 +54,9 @@
 								<span class="highlights-list__sub">Conheça as peças de nosso acervo mais populares entre nossos visitantes.</span>
 							</div>
 						</div>
-							<ul>
+
+						<div class="wrapper-highlights-squares">
+							<ul class="highlights-squares">
 								
 								<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
 								
