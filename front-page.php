@@ -42,7 +42,7 @@
 				</div>
 				<?php 
 				global $MHNViewCounter;
-				$popularItems = $MHNViewCounter->get_items(3);
+				$popularItems = $MHNViewCounter->get_items(4);
 				?>
 
 				<?php if ($popularItems->have_posts()) : ?>
@@ -54,9 +54,7 @@
 								<span class="highlights-list__sub">Conheça as peças de nosso acervo mais populares entre nossos visitantes.</span>
 							</div>
 						</div>
-
-						<div class="wrapper-highlights-squares">
-							<ul class="highlights-squares">
+							<ul class="">
 								
 								<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
 								
@@ -70,7 +68,6 @@
 								<?php endwhile; ?>
 
 							</ul>
-						</div>
 					</div>
 
 				<?php endif; ?>
