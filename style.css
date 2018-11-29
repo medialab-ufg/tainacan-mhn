@@ -18,7 +18,9 @@ body {
 	font-size: inherit;
 	position: relative;
 }
-
+.margin-one-column {
+    margin: 0 4.16666666667%;
+}
 /*
 - MODAL DE AMPLIAÇÃO DAS IMAGENS - SESSÃO DOCUMENTOS
 */
