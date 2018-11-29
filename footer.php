@@ -24,8 +24,10 @@
                         echo get_option('blogaddress', ''); 
                     }
                 ?>
-                    <a href="https://www.facebook.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/768px-F_icon.svg.png" alt="" style="width: 25px"></a>
-                    <a href="https://www.instagram.com/museuhistoriconacional/" target="_BLANK"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png" alt="" style="width: 25px"></a>
+                </p>
+                <p class="tainacan-footer-info--blog">
+                    <a href="https://www.facebook.com/museuhistoriconacional/" target="_BLANK" title="Facebook"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/facebook.png" alt="" style="width: 25px"></a>
+                    <a href="https://www.instagram.com/museuhistoriconacional/" target="_BLANK" title="Instagram"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/instagram.png" alt="" style="width: 25px"></a>
                 </p>
                 <p class="tainacan-footer-info--blog">
                     <?php 
@@ -65,7 +67,7 @@
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/sbm.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/ibram.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo-ministeriodacultura.png" alt=""></div>
-            <div class="col-12 col-sm"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/nome-governo-federal.png" class="not-width" alt=""></div>
+            <div class="col-12 col-sm"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/nome-governo-federal.png" alt=""></div>
         </div>
 
     </footer>
