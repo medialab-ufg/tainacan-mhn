@@ -366,6 +366,11 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	justify-content: space-between;
 	list-style: none;
 }
+@media only screen and (max-width: 576px) {
+	.highlights-list ul {
+		margin: 0;
+	}
+}
 /*
 .highlights-list li {
 	width: 100%;
@@ -639,7 +644,6 @@ footer ul li a:hover {
 .tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
 	width: 140px;
 }
-
 /*
 - ALTO CONTRASTE
 */
