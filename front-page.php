@@ -9,7 +9,7 @@
 <div class="container-fluid margin-top-95 max-large">
 	<div class="row">
 
-		<div class="col-sm margin-one-column px-0">
+		<div class="col margin-one-column px-0">
 			<div id="content" role="main">
 				<div class="highlights-list margin-bottom-25">
 					<div class="margin-two-column">
@@ -42,7 +42,7 @@
 				</div>
 				<?php 
 				global $MHNViewCounter;
-				$popularItems = $MHNViewCounter->get_items(4);
+				$popularItems = $MHNViewCounter->get_items(3);
 				?>
 
 				<?php if ($popularItems->have_posts()) : ?>
