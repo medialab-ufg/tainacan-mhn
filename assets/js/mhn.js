@@ -22,6 +22,10 @@ jQuery( document ).ready(function() {
 	jQuery('#image-modal .modal--super-zoom').bind("contextmenu",function(e) {
 		return false;
 	});
+
+	jQuery('.single-item-collection--document .openseadragon-wrapper-image').bind("contextmenu",function(e) {
+		return false;
+	});
 	
 });
 
