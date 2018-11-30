@@ -19,7 +19,7 @@ jQuery( document ).ready(function() {
 		return;
 	});
 
-	$('#image-modal .modal--super-zoom').bind("contextmenu",function(e) {
+	jQuery('#image-modal .modal--super-zoom').bind("contextmenu",function(e) {
 		return false;
 	});
 	
