@@ -18,6 +18,10 @@ jQuery( document ).ready(function() {
 		}
 		return;
 	});
+
+	$('#image-modal .modal--super-zoom').bind("contextmenu",function(e) {
+		return false;
+	});
 	
 });
 
