@@ -18,7 +18,9 @@ body {
 	font-size: inherit;
 	position: relative;
 }
-
+.margin-one-column {
+    margin: 0 4.16666666667%;
+}
 /*
 - MODAL DE AMPLIAÇÃO DAS IMAGENS - SESSÃO DOCUMENTOS
 */
@@ -366,6 +368,11 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	justify-content: space-between;
 	list-style: none;
 }
+@media only screen and (max-width: 576px) {
+	.highlights-list ul {
+		margin: 0;
+	}
+}
 /*
 .highlights-list li {
 	width: 100%;
@@ -686,7 +693,6 @@ footer ul li a:hover {
 .tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
 	width: 140px;
 }
-
 /*
 - ALTO CONTRASTE
 */

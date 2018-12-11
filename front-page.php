@@ -9,7 +9,7 @@
 <div class="container-fluid margin-top-95 max-large">
 	<div class="row">
 
-		<div class="col-sm margin-one-column px-0">
+		<div class="col margin-one-column px-0">
 			<div id="content" role="main">
 				<div class="highlights-list margin-bottom-25">
 					<div class="margin-two-column">
@@ -54,9 +54,7 @@
 								<span class="highlights-list__sub">Conheça as peças de nosso acervo mais populares entre nossos visitantes.</span>
 							</div>
 						</div>
-
-						<div class="wrapper-highlights-squares">
-							<ul class="highlights-squares">
+							<ul class="">
 								
 								<?php while ($popularItems->have_posts()): $popularItems->the_post(); ?>
 								
@@ -70,7 +68,6 @@
 								<?php endwhile; ?>
 
 							</ul>
-						</div>
 					</div>
 
 				<?php endif; ?>
