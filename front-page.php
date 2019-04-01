@@ -21,7 +21,7 @@
 
 					<ul>
 						<li>
-							<a href="<?php echo get_term_link($expo_martino_term_id, $expo_taxonomy); ?>#/?perpage=96">
+							<a href="<?php echo get_term_link($expo_martino_term_id, $expo_taxonomy);?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
 								<strong>Marinhas - De Martino</strong>
 							</a>
@@ -60,7 +60,14 @@
 								
 									<li>
 										<a href="<?php the_permalink(); ?>">
-											<?php the_post_thumbnail('tainacan-medium'); ?>
+											<?php
+											if (has_post_thumbnail(get_the_ID())):
+													the_post_thumbnail('tainacan-medium');
+											else: ?>
+												<img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/bkg/imagem_nao_disponivel.png'; ?>" alt="Imagem">
+											<?php
+											endif; ?>
+
 											<strong><?php the_title(); ?></strong>
 										</a>
 									</li>
