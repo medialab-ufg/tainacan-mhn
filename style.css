@@ -463,6 +463,18 @@ ul.highlights-squares li img {
 	}
 }
 
+.page-header__image {
+	width: 100vw;
+	max-height: 510px;
+	margin: 0 auto;
+	object-fit: cover;
+	display: block;
+}
+body[data-theme="mhn-theme-page"] .page-header.page-height.page-header--image-full {
+	height: auto;
+	display: block;
+}
+
 /* MODAL DE IMAGEM */
 
 .caption-image-modal {
