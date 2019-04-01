@@ -11,7 +11,7 @@
         <?php } ?>
         <hr class="bg-scooter" style="background-color: #c34250 !important;"/>
         <div class="row p-4 tainacan-mhn-footer--barra-logos text-white text-center">
-            <div class="col-12 col-sm"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer.svg" alt=""></div>
+            <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_template_directory_uri() ?>/assets/images/logo-footer.svg" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/aanh.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/lgo/mhn.png" alt=""></div>
             <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/sbm.png" alt=""></div>
