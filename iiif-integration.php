@@ -95,6 +95,11 @@ class MHNIIIF {
 	function filter_document($html, $item) {
 		
 		$flag_id = $this->get_option('iiif_flag_meta_id');
+		
+		if ( ! $flag_id || ! $item->get_document()) {
+			return $html;
+		}
+
 		if (get_post_meta($item->get_id(), $flag_id, true) != 'Sim') {
 			return '<div class="openseadragon-wrapper-image">' . $html . '<span class="caption-image-modal">Imagem: MHN/Acervo</span></div>';
 		}

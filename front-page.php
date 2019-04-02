@@ -21,19 +21,19 @@
 
 					<ul>
 						<li>
-							<a href="<?php echo get_term_link($expo_martino_term_id, $expo_taxonomy);?>#/?perpage=96">
+							<a href="<?php //echo get_term_link($expo_martino_term_id, $expo_taxonomy);?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/demartin.jpg'; ?>" alt="Coleção">
 								<strong>Marinhas - De Martino</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo get_term_link($expo_retratos_term_id, $expo_taxonomy); ?>#/?perpage=96">
+							<a href="<?php //echo get_term_link($expo_retratos_term_id, $expo_taxonomy); ?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/retratos.jpg'; ?>" alt="Coleção">
 								<strong>Retratos do Império</strong>
 							</a>
 						</li>
 						<li>
-							<a href="<?php echo get_term_link($expo_paisagens_term_id, $expo_taxonomy); ?>#/?perpage=96">
+							<a href="<?php //echo get_term_link($expo_paisagens_term_id, $expo_taxonomy); ?>#/?perpage=96">
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/paisagens.jpg'; ?>" alt="Coleção">
 								<strong>Paisagens cariocas</strong>
 							</a>

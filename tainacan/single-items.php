@@ -81,8 +81,12 @@
                                         <div class="col s-item-collection--metadata">
                                             <div class="card border-0">
                                                 <div class="card-body bg-white border-0 pl-0 pt-0 pb-1">
-                                                    <h3><?php _e('Thumbnail', 'tainacan-interface'); ?></h3>
-                                                    <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tainacan-medium-full') ?>" class="item-card--thumbnail mt-2">
+                                                    <?php
+                                                    if (has_post_thumbnail(get_the_ID())): ?>
+                                                        <h3><?php _e('Thumbnail', 'tainacan-interface'); ?></h3>
+                                                        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tainacan-medium-full') ?>" class="item-card--thumbnail mt-2">
+                                                    <?php
+                                                    endif; ?>
                                                 </div>
                                             </div>
                                             <div class="card border-0 my-3">
