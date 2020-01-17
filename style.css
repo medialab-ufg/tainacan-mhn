@@ -34,6 +34,7 @@ body {
 	padding-bottom: 20px;
 	display: inline-block;
 	position: relative;
+	min-height: 120px;
 }
 .openseadragon-wrapper-image img {
 	max-width: none !important;
@@ -179,6 +180,39 @@ body[data-theme="mhn-theme-page"] .navbar-expand-md .navbar-nav .nav-link:hover 
 }
 
 /*
+- Customização dos blocos da Home
+*/
+body.home .banner-header-box {
+	background-color: rgba(255,255,255,0.8) !important;
+}
+@media screen and (max-width: 768px) {
+	body.home .banner-header-box {
+		order: 2;
+	}
+}
+body.home .banner-header-box h1 {
+	font-weight: 600 !important;
+	color: black !important;
+	font-size: 3.75rem;
+}
+body.home .banner-header-box .tainacan-group-heading p {
+	font-style: normal !important;
+	font-size: 1.125rem !important
+}
+body.home #tainacan-search-bar-block input#tainacan-search-bar-block_input {
+	background-color: rgba(255,255,255,0.8) !important;
+}
+body.home .tainacan-group-heading p {
+	font-style: normal !important;
+	font-size: 1.125rem !important
+}
+body.home .wp-block-button.aligncenter {
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 0px !important;
+}
+
+/*
 - DESTAQUE
 */
 body[data-theme="mhn-theme-page"] .page-header>div.ph-title-description {
@@ -294,7 +328,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	border: none;
 	background: none;
 }
-.search-box button[type=submit] i.mdi{ border-radius: 50%; }
+.search-box button[type=submit] i.tainacan-icon{ border-radius: 50%; }
 
 .search-box button[type=submit]:focus {
     outline: none;
@@ -313,7 +347,7 @@ body[data-theme="mhn-theme-page"] .page-header .title-header p {
 	transform: translateX(0) translateY(0);
 }
 .collection-header--type-b .btn { background-color: rgba(255,255,255,.8); }
-.collection-header--type-b .btn .mdi {
+.collection-header--type-b .btn .tainacan-icon {
 	height: 41px;
 	font-size: 34px;
 	line-height: 41px;
@@ -514,7 +548,7 @@ body[data-theme="mhn-theme-page"] .page-header.page-height.page-header--image-fu
 .accessibility-bar {
 	width: 100%;
 	position: relative;
-	z-index: 9999;
+	z-index: 999;
 	background-color: #fff;
 }
 .accessibility-bar__container {
@@ -710,6 +744,17 @@ footer ul li a:hover {
 .tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
 	width: 140px;
 }
+
+.tainacan-footer .btn-outline-secondary {
+	border: #c34250 !important;
+}
+.tainacan-footer .btn-outline-secondary:hover {
+	border: #c34250 !important;
+	background-color: #c34250 !important;
+}
+.tainacan-footer .btn {
+	border-radius: 0px !important;
+}
 /*
 - ALTO CONTRASTE
 */
@@ -763,8 +808,8 @@ body.contraste .collection-header--type-b .btn.trigger { border: none !important
 body.contraste .page-header.page-height > div.ph-title-description,
 body.contraste .collection-header--share .rotater,
 body.contraste .collection-header--share,
-body.contraste .collection-header--share .btn .mdi.mdi-share-variant,
-body.contraste .collection-header--share .btn .mdi,
+body.contraste .collection-header--share .btn .tainacan-icon.tainacan-icon-share,
+body.contraste .collection-header--share .btn .tainacan-icon,
 body.contraste .t-bg-collection .t-collection--info .t-collection--info-title,
 body.contraste .t-bg-collection .t-collection--info .t-collection--col-9,
 body.contraste .image-placeholder>h4,

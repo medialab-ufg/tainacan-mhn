@@ -105,11 +105,6 @@
                                                                 <img src="<?php echo get_template_directory_uri().'/assets/images/twitter-circle.png'; ?>" alt="">
                                                             </a>
                                                         <?php endif; ?>
-                                                        <?php if ( true == get_theme_mod( 'google_share', true ) ) : ?> 
-                                                            <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>" target="_blank" class="item-card-link--sharing">
-                                                                <img src="<?php echo get_template_directory_uri().'/assets/images/google-plus-circle.png'; ?>" alt="">
-                                                            </a>
-                                                        <?php endif; ?>
                                                     </div>
                                                 </div>
                                             </div>

@@ -10,7 +10,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->	
         <a class="navbar-brand d-md-none" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menubelowHeader" aria-controls="menubelowHeader" aria-expanded="false" aria-label="Toggle navigation">	
-            <i class="mdi mdi-menu"></i>
+            <i class="tainacan-icon tainacan-icon-menu"></i>
         </button>
         <div class="navigation-menu-wrapper">
             <h1 class="main-title"><a href="<?php echo get_home_url(); ?>" class="navbar-brand tainacan-logo" rel="home" itemprop="url"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/img/lgo/mhn.png'; ?>" class="logo" alt="Museu Histórico Nacional" title="Museu Histórico Nacional" itemprop="logo"></a></h1>
