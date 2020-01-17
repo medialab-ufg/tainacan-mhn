@@ -190,10 +190,10 @@ body.home .banner-header-box {
 		order: 2;
 	}
 }
-body.home .banner-header-box h1 {
+body.home .tainacan-content .banner-header-box h1 {
 	font-weight: 600 !important;
 	color: black !important;
-	font-size: 3.75rem;
+	font-size: 3.75rem !important;
 }
 body.home .banner-header-box .tainacan-group-heading p {
 	font-style: normal !important;
@@ -206,8 +206,8 @@ body.home .tainacan-group-heading p {
 	font-style: normal !important;
 	font-size: 1.125rem !important
 }
-body.home .wp-block-button.aligncenter {
-	font-size: 1rem;
+body.home .wp-block-button.aligncenter .btn {
+	font-size: 1rem !important;
 	padding: 0.5rem 1rem;
 	border-radius: 0px !important;
 }
@@ -746,10 +746,10 @@ footer ul li a:hover {
 }
 
 .tainacan-footer .btn-outline-secondary {
-	border: #c34250 !important;
+	border-color: #c34250 !important;
 }
 .tainacan-footer .btn-outline-secondary:hover {
-	border: #c34250 !important;
+	border-color: #c34250 !important;
 	background-color: #c34250 !important;
 }
 .tainacan-footer .btn {
