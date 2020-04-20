@@ -743,10 +743,10 @@ footer hr.bg-scooter {
 }
 
 footer ul li a {
-	color: #fff;
+	color: #fff !important;
 }
 footer ul li a:hover {
-	color: #fff;
+	color: #fff !important;
 }
 
 .tainacan-footer .tainacan-mhn-footer--barra-logos {
