@@ -839,3 +839,9 @@ body.contraste .tooltip .tooltip-inner {
 	background-color: #fff !important;
 }
 body.contraste .accessibility-options .button-high-contrast { background-color: #fff !important; }
+
+:root {
+	--tainacan-block-primary: #9e313c !important;
+	--tainacan-primary: #d9808a !important;
+	--tainacan-secondary: #9e313c !important; 
+}
