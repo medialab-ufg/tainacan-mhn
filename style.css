@@ -734,8 +734,11 @@ body[data-theme="mhn-theme-page"] .page-header.page-height.page-header--image-fu
 /**
 	Footer
 */
-footer.tainacan-footer {
+footer .tainacan-footer {
 	background-color: #9e313c;
+}
+footer .logos-footer {
+	background-color: white;
 }
 footer hr.bg-scooter {
 	background-color: #c34250 !important;
@@ -749,14 +752,14 @@ footer ul li a:hover {
 	color: #fff !important;
 }
 
-.tainacan-footer .tainacan-mhn-footer--barra-logos {
-	padding-bottom: 50px !important;
-	margin-top: 50px;
+.logos-footer .tainacan-mhn-footer--barra-logos {
+	padding-bottom: 12px !important;
+	margin-top: 12px;
 }
-.tainacan-footer .tainacan-mhn-footer--barra-logos .col-12 {
+.logos-footer .tainacan-mhn-footer--barra-logos .col-12 {
 	align-self: center;
 }
-.tainacan-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
+.logos-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
 	width: 140px;
 }
 
