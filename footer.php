@@ -15,7 +15,7 @@
             <div class="row p-4 tainacan-mhn-footer--barra-logos text-white text-center">
                 <div class="col-12 col-sm mb-5 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/tainacan.png" alt="Marca do Tainacan"></div>
                 <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/aanh.png" alt="Marca da AANH"></div>
-                <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/lgo/mhn.png" alt="Marca do Museu Histórico Nacional"></div>
+                <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/mhn.png" alt="Marca do Museu Histórico Nacional"></div>
                 <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/sbm.png" alt="Marca do Sistema Brasileiro de Museus"></div>
                 <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/ibram.png" alt="Marca do Instituto Brasileiro de Museus"></div>
                 <div class="col-12 col-sm mb-3 mb-md-0"><img src="<?php echo get_stylesheet_directory_uri();?>/assets/img/logo-ministerioturismo.png" alt="Marca do Ministério do Turismo"></div>
