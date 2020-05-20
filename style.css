@@ -758,6 +758,7 @@ footer ul li a:hover {
 }
 .logos-footer .tainacan-mhn-footer--barra-logos .col-12 {
 	align-self: center;
+	margin: 24px 0px;
 }
 .logos-footer .tainacan-mhn-footer--barra-logos img:not(.not-width) {
 	width: 140px;
